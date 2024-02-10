@@ -9,27 +9,31 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a href="#" class="main-header__logo logo">
+    <a href="#" class="main-header__logo">
       <img class="main-header__logo-image logo__image" src="img/page-logo-icon.svg" alt="Логотип сайта Кэт Энерджи."
         width="33" height="38">
-    </a>
-    <a class="main-header__title page__title" href="index.html">
-      <img class="page__title--icon logo__text" src="img/page-logo-text.svg" alt="Cat Energy" width="101" height="18">
+      <img class="main-header__logo-image logo__text" src="img/page-logo-text.svg" alt="Cat Energy" width="101"
+        height="18">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">Главная</li>
+        <li class="main-nav__item">Каталог продукции</li>
+        <li class="main-nav__item">Подбор программы</li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
     <section class="hero">
-      <div class="hero-container">
+      <div class="hero__container">
         <header class="hero__header">
           <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
         </header>
-        <a class="hero__link--search" href="form.html">Подобрать программу</a>
+        <a class="hero__link" href="form.html">Подобрать программу</a>
         <img class="hero__image" src="img/hero-product.png" alt="Баночка с функциональным питанием для вашего кота."
           width="280" height="270">
       </div>
@@ -38,7 +42,7 @@
     <!-- Приемущества -->
     <section class="advantages">
       <h2 class="visually-hidden">Наши приемущества</h2>
-      <article class="advantages__card advantages__card--slim">
+      <article class="advantages__card advantages__card--slim card">
         <h3 class="card__title">Похудение</h3>
         <p class="card__description">
           Ваш кот весит больше собаки и почти утратил способность
@@ -47,7 +51,7 @@
         </p>
         <a class="card__link card__link--slim" href="catalog.html">Каталог slim</a>
       </article>
-      <article class="advantages__card advantages__card--fit">
+      <article class="advantages__card advantages__card--fit card">
         <h3 class="card__title">Набор массы</h3>
         <p class="card__description">
           Заработать авторитет среди дворовых котов и даже собак?
@@ -59,20 +63,20 @@
     </section>
 
     <!-- Как это работает -->
-    <section class="steps">
-      <h2 class="steps__title">Как это работает</h2>
-      <ul class="steps__list">
-        <li class="steps__item steps__item--first">
-          <p class="steps__description">Функциональное питание содержит только полезные питательные вещества.</p>
+    <section class="features">
+      <h2 class="title title--h2">Как это работает</h2>
+      <ul class="features__list">
+        <li class="features__item features__item--natural">Функциональное питание содержит только полезные питательные
+          вещества.
         </li>
-        <li class="steps__item steps__item--second">
-          <p class="steps__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        <li class="features__item features__item--form">
+          Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
         </li>
-        <li class="steps__item steps__item--third">
-          <p class="steps__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        <li class="features__item features__item--intake">
+          Замените один-два приема обычной еды на наше функциональное питание.
         </li>
-        <li class="steps__item steps__item--fourth">
-          <p class="steps__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        <li class="features__item features__item--result">
+          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
         </li>
       </ul>
     </section>
@@ -84,10 +88,10 @@
         <p class="recommendation__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
           Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
           спит по 16 часов в день.</p>
-        <dl class="recommendation__data">
-          <dt class="data__name data__name--kilo">5 кг</dt>
+        <dl class="recommendation__data data">
+          <dt class="data__name">5 кг</dt>
           <dd class="data__description">снижение веса</dd>
-          <dt class="data__name data__name--days">60 дней</dt>
+          <dt class="data__name">60 дней</dt>
           <dd class="data__description">затрачено времени</dd>
         </dl>
         <p class="recommendation__budget">Затраты на питание: 15 000руб.</p>

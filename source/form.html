@@ -9,7 +9,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="index.html">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image logo__image" src="../img/page-logo-icon.svg" alt="Логотип сайта Кэт Энерджи."
         width="33" height="38">
     </a>
@@ -20,95 +20,92 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">Главная</li>
+        <li class="main-nav__item">Каталог продукции</li>
+        <li class="main-nav__item">Подбор программы</li>
+      </ul>
     </nav>
   </header>
   <main class="main__container form">
     <h1 class="form__title">Подбор программы</h1>
-    <form class="cat-profile__form" action="https://echo.htmlacademy.ru" method="post">
-
+    <h2 class="form__intro">Заполните анкету, и мы подберем
+      программу питания для вашего кота</h2>
+    <form class="apply__form form" action="https://echo.htmlacademy.ru" method="post">
       <!-- Информация о коте -->
-      <section class="cat-profile">
-        <h2 class="form-title cat-profile__title">Заполните анкету, и мы подберем
-          программу питания для вашего кота</h2>
-        <div class="cat-profile__data-wrapper">
-          <p class="field-wrapper cat-profile__field-wrapper">
-            <label class="form__label cat-profile__label" for="cat-name">Имя:*</label>
-            <input class="form-input cat-profile__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик"
-              required>
+      <section class="form__wrapper">
+        <fieldset class="form__fieldset form__fieldset--text">
+          <legend class="visually-hidden">Заполните форму</legend>
+          <p class="form__field-wrapper">
+            <label class="form__label" for="cat-name">Имя:*</label>
+            <input class="form__text-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
           </p>
-          <p class="field-wrapper cat-profile__field-wrapper">
-            <label class="form__label cat-profile__label" for="cat-weigth">Вес (кг):*</label>
-            <input class="form-input cat-profile__input" type="number" name="cat-weigth" id="cat-weigth" placeholder="7"
-              required>
+          <p class="form__field-wrapper">
+            <label class="form__label" for="cat-weigth">Вес (кг):*</label>
+            <input class="form__text-input" type="number" name="cat-weigth" id="cat-weigth" placeholder="7" required>
           </p>
-          <p class="field-wrapper cat-profile__field-wrapper">
-            <label class="form__label cat-profile__label" for="cat-age">Возраст (лет):</label>
-            <input class="form-input cat-profile__input" type="number" name="cat-age" id="cat-age" placeholder="7">
+          <p class="form__field-wrapper">
+            <label class="form__label" for="cat-age">Возраст (лет):</label>
+            <input class="form__text-input" type="number" name="cat-age" id="cat-age" placeholder="7">
           </p>
-        </div>
-        <div class="cat-profile__goal-wrapper">
-          <label for="lose-weigth">
-            <input class="form-input cat-profile__input" type="radio" id="lose-weigth" name="goal" value="lose-weigth"
-              checked>
-            <span class="form__label cat-profile__input-description">Похудение</span>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--radio">
+          <legend class="visually-hidden">Выберете цель</legend>
+          <label class="form__label" for="lose-weigth">Похудение
+            <input class="form__radio" type="radio" id="lose-weigth" name="goal" value="lose-weigth" checked>
           </label>
-          <label for="gain-weigth">
-            <input class="form-input cat-profile__input" type="radio" id="gain-weigth" name="goal" value="gain-weigth">
-            <span class="form__label cat-profile__input-description">Набор массы</span>
+          <label class="form__label" for="gain-weigth">Набор массы
+            <input class="form__radio" type="radio" id="gain-weigth" name="goal" value="gain-weigth">
           </label>
-          <label for="advice">
-            <input class="form-input cat-profile__input" type="radio" id="advice" name="goal" value="goal-advice">
-            <span class="form__label cat-profile__input-description">Не знаю (Нужен ваш совет)</span>
+          <label class="form__label" for="advice">Не знаю (Нужен ваш совет)
+            <input class="form__radio" type="radio" id="advice" name="goal" value="goal-advice">
           </label>
-        </div>
+        </fieldset>
       </section>
 
       <!-- Контакты -->
-      <section class="form-contacts">
-        <h2 class="form-title form-contacts__title">Контактные данные
+      <section class="form__wrapper form__wrapper--contacts">
+        <h2 class="form__title title--h2">Контактные данные
           (владельца кота)</h2>
-        <div class="form-contacts__data-wrapper">
-          <p class="field-wrapper form-contacts__field-wrapper">
-            <label class="form__label form-contacts__label" for="email">E-mail:*</label>
-            <input class="form-input cat-profile__input" type="email" name="emailaddress" id="email"
+        <fieldset class="form__fieldset form__fieldset--text">
+          <legend class="visually-hidden">Контактные данные</legend>
+          <p class="form__field-wrapper">
+            <label class="form__label" for="email">E-mail:*</label>
+            <input class="form__text-input" type="email" name="emailaddress" id="email"
               placeholder="kuklachev@gmail.com" required>
           </p>
-          <p class="field-wrapper cat-profile__field-wrapper">
-            <label class="form__label form-contacts__label" for="tel">Телефон:*</label>
-            <input class="form-input cat-profile__input" type="tel" name="telnumber" id="tel"
-              placeholder="8 (960) 900-60-90" required>
+          <p class="form__field-wrapper">
+            <label class="form__label" for="tel">Телефон:*</label>
+            <input class="form__text-input" type="tel" name="telnumber" id="tel" placeholder="8 (960) 900-60-90"
+              required>
           </p>
-        </div>
+        </fieldset>
       </section>
 
       <!-- Комментарий -->
-      <section class="comment">
-        <h2 class="form-title comment__title">Комментарий</h2>
-        <p class="field-wrapper comment__field-wrapper">
-          <input class="form-input comment__input" type="text" name="comment"
-            placeholder="Расскажите обо всех повадках кота">
+      <section class="form__wrapper form__wrapper--comment">
+        <h2 class="form__title title--h2">Комментарий</h2>
+        <p class="form__field-wrapper">
+          <label class="form__label">
+            <input class="form__textarea" type="textarea" name="comment" id="comment"
+              placeholder="Расскажите обо всех повадках кота"></label>
         </p>
       </section>
 
       <!-- Дополнительно -->
-      <section class="additional-info">
-        <h2 class="form-title additional-info__title">Дополнительно</h2>
-        <p class="field-wrapper additional-info__field-wrapper">
-          <label class="form__label additional-info__label" for="sweetener">Сахарозаменитель</label>
-          <input class="form-input additional-info__input" type="checkbox" id="sweetener" name="sweetener" checked>
-        </p>
-        <p class="field-wrapper additional-info__field-wrapper">
-          <label class="form__label additional-info__label" for="water">Питьевая вода</label>
-          <input class="form-input additional-info__input" type="checkbox" id="water" name="sweetener">
-        </p>
-        <p class="field-wrapper additional-info__field-wrapper">
-          <label class="form__label additional-info__label" for="milk">Молоко</label>
-          <input class="form-input additional-info__input" type="checkbox" id="milk" name="sweetener">
-        </p>
-        <p class="field-wrapper additional-info__field-wrapper">
-          <label class="form__label additional-info__label" for="adds">Витамины</label>
-          <input class="form-input additional-info__input" type="checkbox" id="adds" name="sweetener">
-        </p>
+      <section class="form__wrapper additional-info">
+        <h2 class="form__title title--h2 additional-info__title">Дополнительно</h2>
+        <fieldset class="form__fieldset form__fieldset--checkbox">
+          <label class="form__label additional-info__label" for="sweetener">Сахарозаменитель
+            <input class="form-input additional-info__input" type="checkbox" id="sweetener" name="sweetener"
+              checked></label>
+          <label class="form__label additional-info__label" for="water">Питьевая вода
+            <input class="form-input additional-info__input" type="checkbox" id="water" name="water"></label>
+          <label class="form__label additional-info__label" for="milk">Молоко
+            <input class="form-input additional-info__input" type="checkbox" id="milk" name="milk"></label>
+          <label class="form__label additional-info__label" for="adds">Витамины
+            <input class="form-input additional-info__input" type="checkbox" id="adds" name="vitamins"></label>
+        </fieldset>
       </section>
       <button class="form__button--submit" type="submit">Отправить заявку</button>
       <span class="form__note">* — Обязательные поля</span>
