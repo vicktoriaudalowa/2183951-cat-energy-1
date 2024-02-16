@@ -56,32 +56,34 @@
       программу питания для вашего кота</h2>
     <form class="form-page__form form" action="https://echo.htmlacademy.ru" method="post">
       <!-- Информация о коте -->
-      <section class="form__wrapper">
-        <fieldset class="form__fieldset form__fieldset--text">
+      <section class="apply-form__wrapper">
+        <fieldset class="apply-form__fieldset apply-form__fieldset--text">
           <legend class="visually-hidden">Заполните форму</legend>
-          <p class="form__field-wrapper">
-            <label class="form__label" for="cat-name">Имя:*</label>
-            <input class="form__text-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+          <p class="apply-form__field-wrapper">
+            <label class="apply-form__label" for="cat-name">Имя:*</label>
+            <input class="apply-form__text-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик"
+              required>
           </p>
-          <p class="form__field-wrapper">
-            <label class="form__label" for="cat-weigth">Вес (кг):*</label>
-            <input class="form__text-input" type="number" name="cat-weigth" id="cat-weigth" placeholder="7" required>
+          <p class="apply-form__field-wrapper">
+            <label class="apply-form__label" for="cat-weigth">Вес (кг):*</label>
+            <input class="apply-form__text-input" type="number" name="cat-weigth" id="cat-weigth" placeholder="7"
+              required>
           </p>
-          <p class="form__field-wrapper">
-            <label class="form__label" for="cat-age">Возраст (лет):</label>
-            <input class="form__text-input" type="number" name="cat-age" id="cat-age" placeholder="7">
+          <p class="apply-form__field-wrapper">
+            <label class="apply-form__label" for="cat-age">Возраст (лет):</label>
+            <input class="apply-form__text-input" type="number" name="cat-age" id="cat-age" placeholder="7">
           </p>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--radio">
+        <fieldset class="apply-form__fieldset apply-form__fieldset--radio">
           <legend class="visually-hidden">Выберете цель</legend>
-          <label class="form__label" for="lose-weigth">Похудение
-            <input class="form__radio" type="radio" id="lose-weigth" name="goal" value="lose-weigth" checked>
+          <label class="apply-form__label" for="lose-weigth">Похудение
+            <input class="apply-form__radio" type="radio" id="lose-weigth" name="goal" value="lose-weigth" checked>
           </label>
-          <label class="form__label" for="gain-weigth">Набор массы
-            <input class="form__radio" type="radio" id="gain-weigth" name="goal" value="gain-weigth">
+          <label class="apply-form__label" for="gain-weigth">Набор массы
+            <input class="apply-form__radio" type="radio" id="gain-weigth" name="goal" value="gain-weigth">
           </label>
-          <label class="form__label" for="advice">Не знаю (Нужен ваш совет)
-            <input class="form__radio" type="radio" id="advice" name="goal" value="goal-advice">
+          <label class="apply-form__label" for="advice">Не знаю (Нужен ваш совет)
+            <input class="apply-form__radio" type="radio" id="advice" name="goal" value="goal-advice">
           </label>
         </fieldset>
       </section>
@@ -90,16 +92,16 @@
       <section class="form__wrapper form__wrapper--contacts">
         <h2 class="form__title title--h2 title">Контактные данные
           (владельца кота)</h2>
-        <fieldset class="form__fieldset form__fieldset--text">
+        <fieldset class="apply-form__fieldset apply-form__fieldset--text">
           <legend class="visually-hidden">Контактные данные</legend>
-          <p class="form__field-wrapper">
-            <label class="form__label" for="email">E-mail:*</label>
-            <input class="form__text-input" type="email" name="emailaddress" id="email"
+          <p class="apply-form__field-wrapper">
+            <label class="apply-form__label" for="email">E-mail:*</label>
+            <input class="apply-form__text-input" type="email" name="emailaddress" id="email"
               placeholder="kuklachev@gmail.com" required>
           </p>
-          <p class="form__field-wrapper">
-            <label class="form__label" for="tel">Телефон:*</label>
-            <input class="form__text-input" type="tel" name="telnumber" id="tel" placeholder="8 (960) 900-60-90"
+          <p class="apply-form__field-wrapper">
+            <label class="apply-form__label" for="tel">Телефон:*</label>
+            <input class="apply-form__text-input" type="tel" name="telnumber" id="tel" placeholder="8 (960) 900-60-90"
               required>
           </p>
         </fieldset>
@@ -122,12 +124,12 @@
           <label class="form__label additional-info__label" for="sweetener">Сахарозаменитель
             <input class="form-input additional-info__input" type="checkbox" id="sweetener" name="sweetener"
               checked></label>
-          <label class="form__label additional-info__label" for="water">Питьевая вода
-            <input class="form-input additional-info__input" type="checkbox" id="water" name="water"></label>
-          <label class="form__label additional-info__label" for="milk">Молоко
-            <input class="form-input additional-info__input" type="checkbox" id="milk" name="milk"></label>
-          <label class="form__label additional-info__label" for="adds">Витамины
-            <input class="form-input additional-info__input" type="checkbox" id="adds" name="vitamins"></label>
+          <label class="apply-form__label additional-info__label" for="water">Питьевая вода
+            <input class="apply-form-input additional-info__input" type="checkbox" id="water" name="water"></label>
+          <label class="apply-form__label additional-info__label" for="milk">Молоко
+            <input class="apply-form-input additional-info__input" type="checkbox" id="milk" name="milk"></label>
+          <label class="apply-form__label additional-info__label" for="adds">Витамины
+            <input class="apply-form-input additional-info__input" type="checkbox" id="adds" name="vitamins"></label>
         </fieldset>
       </section>
       <button class="form__button form__button--submit link--green" type="submit">Отправить заявку</button>
@@ -146,6 +148,7 @@
 
   <!-- Футер -->
   <footer class="main-footer footer">
+  <footer class="main-footer footer">
     <div class="footer__container">
       <a class="footer__title page__title" href="index.html">
         <svg width="128" height="24" viewBox="0 0 128 24" xmlns="http://www.w3.org/2000/svg">
@@ -159,6 +162,7 @@
         </svg>
       </a>
       <h3 class="visually-hidden">Наши контакты</h3>
+      <ul class="socials footer__socials">
       <ul class="socials footer__socials">
         <li class="socials__item">
           <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
