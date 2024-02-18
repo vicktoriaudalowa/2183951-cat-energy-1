@@ -26,90 +26,90 @@
       </ul>
     </nav>
   </header>
-  <main class="main-container form">
-    <h1 class="form__title">Подбор программы</h1>
-    <h2 class="form__intro">Заполните анкету, и мы подберем
+  <main class="main-container form-page">
+    <h1 class="form-page__title">Подбор программы</h1>
+    <h2 class="form-page__intro">Заполните анкету, и мы подберем
       программу питания для вашего кота</h2>
-    <form class="form__apply apply-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form-page__form form" action="https://echo.htmlacademy.ru" method="post">
       <!-- Информация о коте -->
-      <section class="apply-form__wrapper">
-        <fieldset class="apply-form__fieldset apply-form__fieldset--text">
+      <section class="form__wrapper">
+        <fieldset class="form__fieldset form__fieldset--text">
           <legend class="visually-hidden">Заполните форму</legend>
-          <p class="apply-form__field-wrapper">
-            <label class="apply-form__label" for="cat-name">Имя:*</label>
-            <input class="apply-form__text-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик"
+          <p class="form__field-wrapper">
+            <label class="form__label" for="cat-name">Имя:*</label>
+            <input class="form__text-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик"
               required>
           </p>
-          <p class="apply-form__field-wrapper">
-            <label class="apply-form__label" for="cat-weigth">Вес (кг):*</label>
-            <input class="apply-form__text-input" type="number" name="cat-weigth" id="cat-weigth" placeholder="7"
+          <p class="form__field-wrapper">
+            <label class="form__label" for="cat-weigth">Вес (кг):*</label>
+            <input class="form__text-input" type="number" name="cat-weigth" id="cat-weigth" placeholder="7"
               required>
           </p>
-          <p class="apply-form__field-wrapper">
-            <label class="apply-form__label" for="cat-age">Возраст (лет):</label>
-            <input class="apply-form__text-input" type="number" name="cat-age" id="cat-age" placeholder="7">
+          <p class="form__field-wrapper">
+            <label class="form__label" for="cat-age">Возраст (лет):</label>
+            <input class="form__text-input" type="number" name="cat-age" id="cat-age" placeholder="7">
           </p>
         </fieldset>
-        <fieldset class="apply-form__fieldset apply-form__fieldset--radio">
+        <fieldset class="form__fieldset form__fieldset--radio">
           <legend class="visually-hidden">Выберете цель</legend>
-          <label class="apply-form__label" for="lose-weigth">Похудение
-            <input class="apply-form__radio" type="radio" id="lose-weigth" name="goal" value="lose-weigth" checked>
+          <label class="form__label" for="lose-weigth">Похудение
+            <input class="form__radio" type="radio" id="lose-weigth" name="goal" value="lose-weigth" checked>
           </label>
-          <label class="apply-form__label" for="gain-weigth">Набор массы
-            <input class="apply-form__radio" type="radio" id="gain-weigth" name="goal" value="gain-weigth">
+          <label class="form__label" for="gain-weigth">Набор массы
+            <input class="form__radio" type="radio" id="gain-weigth" name="goal" value="gain-weigth">
           </label>
-          <label class="apply-form__label" for="advice">Не знаю (Нужен ваш совет)
-            <input class="apply-form__radio" type="radio" id="advice" name="goal" value="goal-advice">
+          <label class="form__label" for="advice">Не знаю (Нужен ваш совет)
+            <input class="form__radio" type="radio" id="advice" name="goal" value="goal-advice">
           </label>
         </fieldset>
       </section>
 
       <!-- Контакты -->
-      <section class="apply-form__wrapper apply-form__wrapper--contacts">
-        <h2 class="apply-form__title title--h2">Контактные данные
+      <section class="form__wrapper form__wrapper--contacts">
+        <h2 class="form__title title--h2">Контактные данные
           (владельца кота)</h2>
-        <fieldset class="apply-form__fieldset apply-form__fieldset--text">
+        <fieldset class="form__fieldset form__fieldset--text">
           <legend class="visually-hidden">Контактные данные</legend>
-          <p class="apply-form__field-wrapper">
-            <label class="apply-form__label" for="email">E-mail:*</label>
-            <input class="apply-form__text-input" type="email" name="emailaddress" id="email"
+          <p class="form__field-wrapper">
+            <label class="form__label" for="email">E-mail:*</label>
+            <input class="form__text-input" type="email" name="emailaddress" id="email"
               placeholder="kuklachev@gmail.com" required>
           </p>
-          <p class="apply-form__field-wrapper">
-            <label class="apply-form__label" for="tel">Телефон:*</label>
-            <input class="apply-form__text-input" type="tel" name="telnumber" id="tel" placeholder="8 (960) 900-60-90"
+          <p class="form__field-wrapper">
+            <label class="form__label" for="tel">Телефон:*</label>
+            <input class="form__text-input" type="tel" name="telnumber" id="tel" placeholder="8 (960) 900-60-90"
               required>
           </p>
         </fieldset>
       </section>
 
       <!-- Комментарий -->
-      <section class="apply-form__wrapper apply-form__wrapper--comment">
-        <h2 class="apply-form__title title--h2">Комментарий</h2>
-        <p class="apply-form__field-wrapper">
-          <label class="apply-form__label">
-            <input class="apply-form__textarea" type="textarea" name="comment" id="comment"
+      <section class="form__wrapper form__wrapper--comment">
+        <h2 class="form__title title--h2">Комментарий</h2>
+        <p class="form__field-wrapper">
+          <label class="form__label">
+            <input class="form__textarea" type="textarea" name="comment" id="comment"
               placeholder="Расскажите обо всех повадках кота"></label>
         </p>
       </section>
 
       <!-- Дополнительно -->
-      <section class="apply-form__wrapper additional-info">
-        <h2 class="apply-form__title title--h2 additional-info__title">Дополнительно</h2>
-        <fieldset class="apply-form__fieldset apply-form__fieldset--checkbox">
-          <label class="apply-form__label additional-info__label" for="sweetener">Сахарозаменитель
-            <input class="apply-form-input additional-info__input" type="checkbox" id="sweetener" name="sweetener"
+      <section class="form__wrapper additional-info">
+        <h2 class="form__title title--h2 additional-info__title">Дополнительно</h2>
+        <fieldset class="form__fieldset form__fieldset--checkbox">
+          <label class="form__label additional-info__label" for="sweetener">Сахарозаменитель
+            <input class="form-input additional-info__input" type="checkbox" id="sweetener" name="sweetener"
               checked></label>
-          <label class="apply-form__label additional-info__label" for="water">Питьевая вода
-            <input class="apply-form-input additional-info__input" type="checkbox" id="water" name="water"></label>
-          <label class="apply-form__label additional-info__label" for="milk">Молоко
-            <input class="apply-form-input additional-info__input" type="checkbox" id="milk" name="milk"></label>
-          <label class="apply-form__label additional-info__label" for="adds">Витамины
-            <input class="apply-form-input additional-info__input" type="checkbox" id="adds" name="vitamins"></label>
+          <label class="form__label additional-info__label" for="water">Питьевая вода
+            <input class="form-input additional-info__input" type="checkbox" id="water" name="water"></label>
+          <label class="form__label additional-info__label" for="milk">Молоко
+            <input class="form-input additional-info__input" type="checkbox" id="milk" name="milk"></label>
+          <label class="form__label additional-info__label" for="adds">Витамины
+            <input class="form-input additional-info__input" type="checkbox" id="adds" name="vitamins"></label>
         </fieldset>
       </section>
-      <button class="apply-form__button apply-form__button--submit" type="submit">Отправить заявку</button>
-      <span class="apply-form__note">* — Обязательные поля</span>
+      <button class="form__button form__button--submit" type="submit">Отправить заявку</button>
+      <span class="form__note">* — Обязательные поля</span>
     </form>
 
     <!-- Приглашение к сотрудничеству + карта -->
