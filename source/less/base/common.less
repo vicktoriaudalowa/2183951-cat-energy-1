@@ -3,15 +3,22 @@ html {
 }
 
 .page__body {
+  min-height: 100%;
+  margin: 0;
+}
+
+.page__body--center {
+  min-width: 320px;
+  max-width: @desktop-width;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  width: 320px;
   box-sizing: border-box;
 }
 
 .main-container {
   flex-grow: 1;
+  min-width: 320px;
+  margin: 0 auto;
 }
 

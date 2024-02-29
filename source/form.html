@@ -9,6 +9,7 @@
 </head>
 
 <body class="page__body">
+  <div class="page__body--center">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
@@ -39,7 +40,7 @@
         </defs>
       </svg>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--black">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -51,12 +52,12 @@
     </nav>
   </header>
   <main class="main-container form-page">
-    <h1 class="form-page__title title title--h1">Подбор программы</h1>
+    <h1 class="form-page__title title">Подбор программы</h1>
     <h2 class="form-page__intro">Заполните анкету, и мы подберем
       программу питания для вашего кота</h2>
     <form class="form-page__form form" action="https://echo.htmlacademy.ru" method="post">
       <!-- Информация о коте -->
-      <section class="form__wrapper">
+      <section class="form__wrapper form__wrapper--goal">
         <fieldset class="form__fieldset form__fieldset--text">
           <legend class="visually-hidden">Заполните форму</legend>
           <p class="form__field-wrapper">
@@ -88,18 +89,18 @@
 
       <!-- Контакты -->
       <section class="form__wrapper form__wrapper--contacts">
-        <h2 class="form__title title--h2 title">Контактные данные
-          (владельца кота)</h2>
-        <fieldset class="form__fieldset form__fieldset--text">
+        <h2 class="form__title title--h2 title">Контактные данные (владельца кота)
+        </h2>
+        <fieldset class="form__fieldset form__fieldset--input">
           <legend class="visually-hidden">Контактные данные</legend>
           <p class="form__field-wrapper">
             <label class="form__label" for="email">E-mail:*</label>
-            <input class="form__text-input" type="email" name="emailaddress" id="email"
+            <input class="form__text-input form__text-input--contacts" type="email" name="emailaddress" id="email"
               placeholder="kuklachev@gmail.com" required>
           </p>
           <p class="form__field-wrapper">
             <label class="form__label" for="tel">Телефон:*</label>
-            <input class="form__text-input" type="tel" name="telnumber" id="tel" placeholder="8 (960) 900-60-90"
+            <input class="form__text-input form__text-input--contacts" type="tel" name="telnumber" id="tel" placeholder="8 (960) 900-60-90"
               required>
           </p>
         </fieldset>
@@ -130,8 +131,9 @@
             <input class="form-input additional-info__input" type="checkbox" id="adds" name="vitamins"></label>
         </fieldset>
       </section>
+      <div class="form__button--wrapper">
       <button class="form__button form__button--submit link--green" type="submit">Отправить заявку</button>
-      <span class="form__note">* — Обязательные поля</span>
+      <span class="form__note">* — Обязательные поля</span></div>
     </form>
 
     <!-- Приглашение к сотрудничеству + карта -->
@@ -205,6 +207,7 @@
       </a>
     </div>
   </footer>
+</div>
 </body>
 
 </html>

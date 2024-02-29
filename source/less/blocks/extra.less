@@ -5,13 +5,42 @@
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
+  margin: 0;
   margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+  }
 }
 
 .extra__list {
   padding: 0;
   list-style-type: none;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 68px 28px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 20px 19px 40px;
+  }
+}
+
+.extra__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    min-height: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .extra__wrapper h3 {
@@ -19,10 +48,21 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
+  text-transform: uppercase;
   letter-spacing: 0;
   text-align: left;
   margin: 0;
   margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    width: 326px;
+  }
 }
 
 .extra__wrapper p {
@@ -33,16 +73,64 @@
   letter-spacing: 0;
   text-align: left;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 276px;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
 }
 
 .extra__item {
-  margin-bottom: 31px;
+  box-sizing: border-box;
+  padding-bottom: 31px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+    padding: 28px 38px 28px 38px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    border-bottom: transparent;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+    padding: 15px 1px;
+    max-width: 894px;
+    border-left: transparent;
+    border-right: transparent;
   }
 }
 
 .extra__item a {
   margin-top: 15px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 244px;
+    margin-left: auto;
+  }
 }

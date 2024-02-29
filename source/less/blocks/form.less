@@ -1,5 +1,5 @@
 .form {
-  padding: 0 20px 32px 20px;
+  margin: 0;
 }
 
 .form__fieldset {
@@ -13,6 +13,66 @@
   &--radio {
     padding: 22px 0 19px 0;
   }
+
+  @media (min-width: @tablet-width) {
+    max-width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+  }
+}
+
+.form__fieldset--text {
+  max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.form__fieldset--input {
+  @media (min-width: @desktop-width) {
+    margin-right: 80px;
+    max-width: @desktop-width;
+    flex-direction: row;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.form__text-input--contacts {
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    min-width: 495px;
+  }
+}
+
+.form__fieldset--input p {
+  margin-right: 0;
+  max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 628px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 81px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .form__label {
@@ -24,6 +84,24 @@
   text-align: left;
   color: #444444;
   text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 13px;
+  }
+}
+
+.form__wrapper--goal {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .form__fieldset--radio label {
@@ -37,9 +115,18 @@
 .form__field-wrapper {
   margin: 0;
   margin-bottom: 14px;
+  display: flex;
 
   &:last-child {
     margin-bottom: 24px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
   }
 }
 
@@ -56,15 +143,40 @@
   box-sizing: border-box;
   padding: 14px 15px;
   margin-right: auto;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .form__title {
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+  }
 }
 
 .form__wrapper--contacts {
   padding-top: 26px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 17px;
+  }
 }
 
 .form__wrapper--contacts h2 {
@@ -73,6 +185,26 @@
 
 .form__wrapper--comment h2 {
   margin-bottom: 38px;
+}
+
+.form__wrapper--comment {
+  padding-bottom: 40px;
+}
+
+.form__fieldset--checkbox {
+  padding: 34px 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 225px 225px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 62px 0;
+  }
 }
 
 .form__textarea {
@@ -93,20 +225,65 @@
     color: #444444;
     text-transform: uppercase;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 628px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form__button--submit {
   margin-bottom: 21px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 284px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
+.form__button--wrapper {
+  max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    max-width: @tablet-width;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+    margin-bottom: 79px;
+  }
 }
 
 .form__note {
   display: block;
-  min-width: 100%;
   margin: 0 auto;
+  margin-bottom: 32px;
   font-family: "Lato-Regular", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin-left: 60px;
+  }
 }

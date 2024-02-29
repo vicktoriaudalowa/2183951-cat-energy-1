@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Кэт Энерджи</title>
 </head>
 
 <body class="page__body">
+  <div class="page__body--center">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" fill="none">
@@ -60,6 +61,7 @@
         <a class="hero__link link--green" href="form.html">Подобрать программу</a>
         <img class="hero__image" src="img/hero-product.png" alt="Баночка с функциональным питанием для вашего кота."
           width="280" height="270">
+        <span class="hero__background"></span>
       </div>
     </section>
 
@@ -107,8 +109,8 @@
 
     <!-- Рекомендации -->
     <section class="recommendation">
-      <h2 class="recommendation__title title--h2 title">Живой пример</h2>
       <div class="recommendation__wrapper">
+        <h2 class="recommendation__title title--h2 title">Живой пример</h2>
         <p class="recommendation__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
           Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
           спит по 16 часов в день.</p>
@@ -118,7 +120,7 @@
           <dt class="data__name">60 дней</dt>
           <dd class="data__description">затрачено времени</dd>
         </dl>
-        <p class="recommendation__budget">Затраты на питание: 15 000руб.</p>
+        <p class="recommendation__budget">Затраты на питание: <span>15 000руб.</span> </p>
       </div>
       <div class="recommendation__progress">
         <img src="img/preview-cat.png" alt="Похудевший кот." width="280" height="256">
@@ -196,6 +198,7 @@
       </a>
     </div>
   </footer>
+</div>
 </body>
 
 </html>

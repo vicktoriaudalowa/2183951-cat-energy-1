@@ -1,6 +1,18 @@
 .present {
   padding: 29px 20px;
   box-sizing: border-box;
+  max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 707px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    min-width: 245px;
+    margin: 0;
+  }
 }
 
 .present__wrapper {
@@ -37,6 +49,13 @@
     opacity: 80%;
     background-repeat: no-repeat;
     bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    max-width: 245px;
+    top: -340px;
+    right: -1000px;
   }
 }
 

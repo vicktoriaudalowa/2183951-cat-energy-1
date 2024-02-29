@@ -8,4 +8,16 @@
   &:last-child {
     margin-bottom: 34px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

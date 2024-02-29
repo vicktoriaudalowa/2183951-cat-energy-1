@@ -1,10 +1,19 @@
 .card__item {
   padding: 20px;
   box-sizing: border-box;
+  width: 320px;
 
   &--show--more {
     padding: 0;
     padding-top: 5px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
   }
 }
 
@@ -28,9 +37,18 @@
 .card__link {
   text-decoration: none;
   box-sizing: border-box;
+  width: 280px;
 
   &--extra {
     text-align: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
   }
 }
 
