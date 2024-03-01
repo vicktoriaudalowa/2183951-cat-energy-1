@@ -1,3 +1,21 @@
+.data {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 400px;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-bottom: 55px;
+    max-width: 350px;
+  }
+}
+
 .data__name {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -5,6 +23,8 @@
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .data__description {
@@ -15,4 +35,8 @@
   letter-spacing: 0;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 11px;
+  }
 }

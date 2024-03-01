@@ -7,12 +7,23 @@
   }
 
   @media (min-width: @desktop-width) {
-    color: #ffffff;
     align-items: end;
+    color: #ffffff;
   }
 }
 
-.main-nav--black {
+.main-nav__item a {
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.main-nav--black a {
   color: #000000;
 }
 

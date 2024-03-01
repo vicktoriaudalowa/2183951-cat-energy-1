@@ -2,21 +2,37 @@
   padding: 26px 20px;
   display: flex;
   box-sizing: border-box;
+  justify-content: space-between;
   margin: 0 auto;
 
   &--form,
   &--catalog {
     background-color: #f2f2f2;
+
+    @media (min-width: @desktop-width) {
+      background-color: transparent;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    justify-content: space-between;
     max-width: @tablet-width;
+    margin: 0;
   }
 
-  @media (min-width: @tablet-width) {
-    justify-content: space-between;
+  @media (min-width: @desktop-width) {
     width: 565px;
+  }
+}
+
+.map__contact--form {
+  @media (min-width: @tablet-width) {
+    max-width: 100%;
+  }
+}
+
+.map__contact--catalog {
+  @media (min-width: @tablet-width) {
+    max-width: 100%;
   }
 }
 
