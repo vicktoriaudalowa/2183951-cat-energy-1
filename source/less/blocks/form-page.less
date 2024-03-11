@@ -1,12 +1,16 @@
 .form-page {
-  padding: 27px 20px;
-  margin: 0;
+  max-width: 320px;
+  padding: 27px 20px 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    max-width: @tablet-width;
     padding: 65px 70px 0 70px;
   }
 
   @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
     padding: 74px 110px 0 110px;
   }
 }

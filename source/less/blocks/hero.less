@@ -2,15 +2,14 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-align: center;
-  background-color: #ffffff;
   box-sizing: border-box;
   height: 100%;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    text-align: left;
     background-color: transparent;
+    text-align: left;
     padding: 65px 20px 0 120px;
     margin-bottom: 526px;
   }
@@ -18,19 +17,17 @@
   @media (min-width: @desktop-width) {
     padding: 110px 0 0 190px;
     margin-bottom: 210px;
-    max-width: 1500px;
+    max-width: 1440px;
   }
 }
 
 .hero__header {
-  position: relative;
   background-color: #68b738;
   max-width: 370px;
   min-height: 302px;
   padding: 27px 35px;
   box-sizing: border-box;
   opacity: 85%;
-  flex-grow: 1;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -46,6 +43,7 @@
 }
 
 .hero__title {
+  position: relative;
   display: block;
   font-weight: 400;
   width: 250px;
@@ -107,6 +105,11 @@
   box-sizing: border-box;
   max-width: 320px;
 
+  @media (max-width: 768px) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
@@ -139,7 +142,7 @@
 .hero__background {
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: -200px;
+    top: -230px;
     left: 530px;
     width: 720px;
     height: 694px;

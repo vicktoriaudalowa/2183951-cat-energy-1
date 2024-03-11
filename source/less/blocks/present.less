@@ -1,15 +1,15 @@
 .present {
   padding: 29px 20px;
   box-sizing: border-box;
-  max-width: 280px;
+  margin: 0 auto;
+  max-width: 320px;
 
   @media (min-width: @tablet-width) {
-    min-width: 707px;
-    margin: 0 auto;
+    max-width: 750px;
   }
 
   @media (min-width: @desktop-width) {
-    position: relative;
+    position: absolute;
     min-width: 245px;
     margin: 0;
   }
@@ -18,7 +18,7 @@
 .present__wrapper {
   position: relative;
   min-height: 290px;
-  min-width: 280px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -51,11 +51,15 @@
     bottom: 0;
   }
 
+  @media (min-width: @tablet-width) {
+    width: 707px;
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
-    max-width: 245px;
+    width: 245px;
     top: -340px;
-    right: -1000px;
+    right: -1100px;
   }
 }
 

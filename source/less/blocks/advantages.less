@@ -1,5 +1,5 @@
 .advantages {
-  padding: 20px 20px;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   min-width: 320px;
@@ -17,16 +17,21 @@
 .advantages__item {
   background-color: #f2f2f2;
   padding: 30px 33px 18px 20px;
-  margin-bottom: 20px;
   max-width: 280px;
   min-height: 266px;
   box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 77px 63px 53px 52px;
     min-width: 701px;
     min-height: 372px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     &:last-child {
       margin-bottom: 0;
@@ -76,7 +81,7 @@
   }
 }
 
-.advantages__item h3::before {
+.advantages__item--slim h3::before {
   content: "";
   display: block;
   width: 50px;
@@ -86,6 +91,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 20px;
+
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -103,6 +109,38 @@
     order: 0;
     width: 100px;
     height: 106px;
+    margin-right: 62px;
+    margin-bottom: 0;
+  }
+}
+
+.advantages__item--fit h3::before {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 50px;
+  background-image: url("../img/adv-fit-cat.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 350px;
+    top: 10px;
+    width: 268px;
+    height: 200px;
+    font-size: 36px;
+    line-height: 36px;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: static;
+    order: 0;
+    width: 134px;
+    height: 100px;
     margin-right: 62px;
     margin-bottom: 0;
   }
@@ -145,10 +183,26 @@
   line-height: 16px;
   letter-spacing: 0;
   cursor: pointer;
-  display: block;
+  display: flex;
+  align-items: center;
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    display: block;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 15px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 25px;
+    }
   }
 }
 

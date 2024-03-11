@@ -24,7 +24,7 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 26px 68px 28px 40px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -99,7 +99,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    max-width: 708px;
+    min-width: 708px;
     padding: 28px 38px 28px 38px;
     text-align: center;
     border: 1px solid #cdcdcd;
@@ -114,13 +114,13 @@
     display: flex;
     align-items: center;
     padding: 15px 1px;
-    max-width: 894px;
+    min-width: 895px;
     border-left: transparent;
     border-right: transparent;
   }
 }
 
-.extra__item a {
+.extra__botton {
   margin-top: 15px;
   width: 280px;
 
@@ -131,7 +131,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 244px;
+    min-width: 244px;
     margin-left: auto;
   }
 }

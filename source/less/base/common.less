@@ -14,11 +14,21 @@ html {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .main-container {
   flex-grow: 1;
   min-width: 320px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
+    margin: 0 auto;
+  }
 }
 

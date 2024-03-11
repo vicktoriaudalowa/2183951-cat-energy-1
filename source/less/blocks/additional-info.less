@@ -1,5 +1,9 @@
 .additional-info h2 {
   margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .additional-info__label {
@@ -10,14 +14,16 @@
   }
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     margin-right: 13px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    min-height: 40px;
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
