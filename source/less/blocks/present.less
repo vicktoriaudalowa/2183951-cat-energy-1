@@ -5,7 +5,8 @@
   max-width: 320px;
 
   @media (min-width: @tablet-width) {
-    max-width: 750px;
+    padding: 29px 0;
+    max-width: 710px;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,7 +18,7 @@
 
 .present__wrapper {
   position: relative;
-  min-height: 290px;
+  height: 290px;
   width: 280px;
   display: flex;
   flex-direction: column;
@@ -27,9 +28,24 @@
   background-color: #68b738;
   z-index: -1;
 
+  @media (min-width: @tablet-width) {
+    height: 200px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    padding: 56px 42px 43px 42px;
+    height: 288px;
+    width: 245px;
+    top: -340px;
+    right: -1100px;
+  }
+
   &::after {
     position: absolute;
     content: "";
+    display: block;
     left: 0;
     min-width: 100%;
     min-height: 290px;
@@ -37,6 +53,18 @@
     background-repeat: no-repeat;
     bottom: 0;
     z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      min-height: 200px;
+      background-image: url("../img/present-cat-bg-tablet.jpg");
+      background-position: center;
+      background-size: contain;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 290px;
+      background-image: url("../img/present-cat-bg-desktop.jpg");
+    }
   }
 
   &::before {
@@ -44,22 +72,21 @@
     content: "";
     left: 0;
     min-width: 100%;
-    min-height: 290px;
+    height: 290px;
     background-color: #68b738;
     opacity: 80%;
     background-repeat: no-repeat;
     bottom: 0;
-  }
 
-  @media (min-width: @tablet-width) {
-    width: 707px;
-  }
+    @media (min-width: @tablet-width) {
+      height: 200px;
+      margin: 0 auto;
+      left: 0;
+    }
 
-  @media (min-width: @desktop-width) {
-    position: absolute;
-    width: 245px;
-    top: -340px;
-    right: -1100px;
+    @media (min-width: @desktop-width) {
+      min-height: 290px;
+    }
   }
 }
 
@@ -76,6 +103,20 @@
   color: #ffffff;
   z-index: 1;
 
+  @media (min-width: @tablet-width) {
+    display: inline-flex;
+    text-align: left;
+    max-width: 161px;
+    margin-left: 365px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 165px;
+    text-align: center;
+    margin: 0;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -84,5 +125,17 @@
     background-image: url("../img/present-icon.svg");
     background-position: center;
     margin: 0 auto 48px auto;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      right: 430px;
+      bottom: -5px;
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      position: static;
+      margin: 0 auto 46px auto;
+    }
   }
 }

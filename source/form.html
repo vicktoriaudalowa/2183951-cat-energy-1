@@ -139,10 +139,17 @@
     <!-- Приглашение к сотрудничеству + карта -->
     <section class="map">
       <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
-      <address class="map__contact map__contact--form">
+      <address class="map__contact">
         <h3>Приглашаем к сотрудничеству дилеров!</h3>
-        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p>ул. Большая Конюшенная, д. 19/8 <span class="map__contact--span">Санкт-Петербург</span></p>
       </address>
+      <div class="map__picture">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map/map-desktop.jpg, img/map/map-desktop-2x.jpg 2x" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet-2x.jpg 2x" width="768" height="400">
+          <img src="img/map/map-mobile.jpg" alt="Наше местоположение." srcset="img/map/map-mobile-2x.jpg 2x" width="320" height="362">
+        </picture>
+      </div>
     </section>
   </main>
 

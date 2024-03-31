@@ -104,10 +104,16 @@
   position: relative;
   box-sizing: border-box;
   max-width: 320px;
+  background-image: url("../img/hero/hero-cat-mobile.jpg");
+  background-repeat: no-repeat;
 
-  @media (max-width: 768px) {
-    max-width: 768px;
+  @media (max-width: 767px) {
+    max-width: 767px;
     margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -125,16 +131,16 @@
   @media (min-width: @tablet-width) {
     min-width: 709px;
     height: 609px;
-    left: -40px;
+    left: -70px;
     top: 201px;
     z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
-    width: 552px;
+    min-width: 552px;
     height: 499px;
     top: -65px;
-    left: 390px;
+    left: 355px;
     z-index: 0;
   }
 }
@@ -148,7 +154,7 @@
     height: 694px;
     background-color: #68b738;
     display: block;
-    background-image: url("../img/hero-background.png");
+    background-image: url("../img/hero/hero-cat-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom right;

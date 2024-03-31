@@ -59,8 +59,12 @@
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
         </header>
         <a class="hero__link link--green" href="form.html">Подобрать программу</a>
-        <img class="hero__image" src="img/hero-product.png" alt="Баночка с функциональным питанием для вашего кота."
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/hero/hero-product-desktop-1x.png 1x, img/hero/hero-product-desktop-2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/hero/hero-product-tablet-1x.jpg 1x, img/hero/hero-product-tablet-2x.jpg 2x">
+          <img class="hero__image" src="img/hero/hero-product.png" srcset="img/hero/hero-product-2x.png 2x" alt="Баночка с функциональным питанием для вашего кота."
           width="280" height="270">
+        </picture>
         <span class="hero__background"></span>
       </div>
     </section>
@@ -121,7 +125,7 @@
         <p class="recommendation__budget">Затраты на питание: <span>15 000руб.</span> </p>
       </div>
       <div class="recommendation__progress">
-        <img src="img/preview-cat.png" alt="Похудевший кот." width="280" height="256">
+          <img src="img/preview-cat.png" srcset="img/cat-preview-2x.png 2x" alt="Похудевший кот." width="280" height="256">
       </div>
     </section>
 
@@ -130,8 +134,15 @@
       <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
       <address class="map__contact">
         <h3>Приглашаем к сотрудничеству дилеров!</h3>
-        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p>ул. Большая Конюшенная, д. 19/8 <span class="map__contact--span">Санкт-Петербург</span></p>
       </address>
+      <div class="map__picture">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map/map-desktop.jpg, img/map/map-desktop-2x.jpg 2x" width="1440" height="400">
+          <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet-2x.jpg 2x" width="768" height="400">
+          <img src="img/map/map-mobile.jpg" alt="Наше местоположение." srcset="img/map/map-mobile-2x.jpg 2x" width="320" height="362">
+        </picture>
+      </div>
     </section>
   </main>
 
