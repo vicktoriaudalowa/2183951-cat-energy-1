@@ -15,6 +15,7 @@
 }
 
 .advantages__item {
+  position: relative;
   background-color: #f2f2f2;
   padding: 30px 33px 18px 20px;
   max-width: 280px;
@@ -77,26 +78,21 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 39px;
+    margin-bottom: 89px;
   }
 }
 
-.advantages__item--slim h3::before {
-  content: "";
-  display: block;
+.advantages__item--img--slim {
+  display: inline-flex;
   width: 50px;
   height: 53px;
-  background-image: url("../img/adv-slim-cat.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-right: 20px;
 
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    left: 350px;
-    top: 10px;
+    left: 400px;
+    top: 80px;
     width: 200px;
     height: 211px;
     font-size: 36px;
@@ -106,7 +102,6 @@
 
   @media (min-width: @desktop-width) {
     position: static;
-    order: 0;
     width: 100px;
     height: 106px;
     margin-right: 62px;
@@ -114,31 +109,24 @@
   }
 }
 
-.advantages__item--fit h3::before {
-  content: "";
-  display: block;
+.advantages__item--img--fit {
+  display: inline-flex;
   width: 67px;
   height: 50px;
-  background-image: url("../img/adv-fit-cat.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 20px;
+  margin-right: 11px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    left: 350px;
-    top: 10px;
+    left: 400px;
+    top: 80px;
     width: 268px;
     height: 200px;
     font-size: 36px;
     line-height: 36px;
-    order: 1;
   }
 
   @media (min-width: @desktop-width) {
     position: static;
-    order: 0;
     width: 134px;
     height: 100px;
     margin-right: 62px;
@@ -166,7 +154,7 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    width: 450px;
+    min-width: 451px;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 23px;
@@ -195,7 +183,7 @@
     width: 32px;
     height: 10px;
     display: block;
-    background-image: url("../img/arrow.svg");
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='12' viewBox='0 0 32 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='6' x2='18' y2='6' stroke='black' stroke-width='2'/%3E%3Cpath d='M24 6L17.25 11.1962L17.25 0.803848L24 6Z' fill='black'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 15px;
