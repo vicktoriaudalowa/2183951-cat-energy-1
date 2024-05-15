@@ -47,7 +47,7 @@
       <ul class="main-nav__list main-nav__list--show">
         <li class="main-nav__item"><a href="index.html">Главная</a></li>
         <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="main-nav__item"><a href="form.html">Подбор программы</a></li>
+        <li class="main-nav__item main-nav__item--line"><a href="form.html">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
@@ -76,20 +76,23 @@
         <fieldset class="form__fieldset form__fieldset--radio">
           <legend class="visually-hidden">Выберете цель</legend>
           <label class="form__label" for="lose-weigth">Похудение
-            <input class="form__radio" type="radio" id="lose-weigth" name="goal" value="lose-weigth" checked>
+            <input class="form__radio visually-hidden" type="radio" id="lose-weigth" name="goal" value="lose-weigth" checked>
+            <span class="form__radio--mark"></span>
           </label>
           <label class="form__label" for="gain-weigth">Набор массы
-            <input class="form__radio" type="radio" id="gain-weigth" name="goal" value="gain-weigth">
+            <input class="form__radio visually-hidden" type="radio" id="gain-weigth" name="goal" value="gain-weigth">
+            <span class="form__radio--mark"></span>
           </label>
           <label class="form__label" for="advice">Не знаю (Нужен ваш совет)
-            <input class="form__radio" type="radio" id="advice" name="goal" value="goal-advice">
+            <input class="form__radio visually-hidden" type="radio" id="advice" name="goal" value="goal-advice">
+            <span class="form__radio--mark"></span>
           </label>
         </fieldset>
       </section>
 
       <!-- Контакты -->
       <section class="form__wrapper form__wrapper--contacts">
-        <h2 class="form__title title--h2 title">Контактные данные (владельца кота)
+        <h2 class="form__title .form__title--contacts title">Контактные данные (владельца кота)
         </h2>
         <fieldset class="form__fieldset form__fieldset--input">
           <legend class="visually-hidden">Контактные данные</legend>
@@ -108,7 +111,7 @@
 
       <!-- Комментарий -->
       <section class="form__wrapper form__wrapper--comment">
-        <h2 class="form__title title--h2 title">Комментарий</h2>
+        <h2 class="form__title .form__title--comment title">Комментарий</h2>
         <p class="form__field-wrapper">
           <label class="form__label">
             <input class="form__textarea" type="textarea" name="comment" id="comment"
@@ -118,17 +121,23 @@
 
       <!-- Дополнительно -->
       <section class="form__wrapper additional-info">
-        <h2 class="form__title title--h2 title">Дополнительно</h2>
+        <h2 class="form__title .form__title--additional title">Дополнительно</h2>
         <fieldset class="form__fieldset form__fieldset--checkbox">
           <label class="form__label additional-info__label" for="sweetener">Сахарозаменитель
-            <input class="form-input additional-info__input" type="checkbox" id="sweetener" name="sweetener"
-              checked></label>
+            <input class="form-input additional-info__input visually-hidden" type="checkbox" id="sweetener" name="sweetener"
+              checked>
+            <span class="form-input__mark"></span></label>
           <label class="form__label additional-info__label" for="water">Питьевая вода
-            <input class="form-input additional-info__input" type="checkbox" id="water" name="water"></label>
+            <input class="form-input additional-info__input visually-hidden" type="checkbox" id="water" name="water">
+            <span class="form-input__mark"></span></label>
           <label class="form__label additional-info__label" for="milk">Молоко
-            <input class="form-input additional-info__input" type="checkbox" id="milk" name="milk"></label>
+            <input class="form-input additional-info__input visually-hidden" type="checkbox" id="milk" name="milk">
+            <span class="form-input__mark"></span>
+          </label>
           <label class="form__label additional-info__label" for="adds">Витамины
-            <input class="form-input additional-info__input" type="checkbox" id="adds" name="vitamins"></label>
+            <input class="form-input additional-info__input visually-hidden" type="checkbox" id="adds" name="vitamins">
+            <span class="form-input__mark"></span>
+          </label>
         </fieldset>
       </section>
       <div class="form__button--wrapper">
