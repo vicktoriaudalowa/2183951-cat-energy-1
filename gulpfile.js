@@ -100,7 +100,6 @@ const server = (done) => {
   done();
 }
 
-
 // Watcher
 
 const watcher = () => {
@@ -126,4 +125,3 @@ export const build = gulp.series(
     createWebp
   )
 );
-
