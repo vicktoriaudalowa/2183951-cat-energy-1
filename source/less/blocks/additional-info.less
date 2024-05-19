@@ -42,7 +42,21 @@
   }
 }
 
-.additional-info__input:checked + .form-input__mark::before {
+.additional-info__mark {
+  position: absolute;
+  left: -40px;
+  display: block;
+  height: 26px;
+  width: 26px;
+  border-radius: 10%;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    left: -43px;
+  }
+}
+
+.additional-info__input:checked + .additional-info__mark::before {
   content: "";
   display: block;
   width: 18px;
@@ -54,8 +68,8 @@
   margin-left: 5px;
 }
 
-.additional-info__input:disabled + .form-input__mark {
-  opacity: 30;
+.additional-info__input:disabled + .additional-info__mark {
+  opacity: 30%;
 }
 
 .additional-info__label:has(.additional-info__input:disabled) {
