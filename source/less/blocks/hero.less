@@ -103,14 +103,14 @@
 .hero__container {
   position: relative;
   box-sizing: border-box;
-  max-width: 320px;
   background-image: url("../img/hero/hero-cat-mobile.webp");
+  object-fit: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
     background-image: none;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
