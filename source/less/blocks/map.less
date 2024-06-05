@@ -27,11 +27,39 @@
     left: 110px;
     z-index: 2;
     width: 565px;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  &--gray {
+    background-color: #f2f2f2;
+
+    @media (min-width: @desktop-width) {
+      background-color: #ffffff;
+    }
   }
 }
 
-.map__contact h3 {
-  font-family: "Oswald", sans-serif;
+.map__contact p {
+  font-family: "Lato-Regular", "Tahoma", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 160px;
+  }
+}
+
+.map__contact p:first-child {
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
@@ -50,29 +78,12 @@
   }
 }
 
-.map__contact p {
-  font-family: "Lato-Regular", sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0;
-  text-align: left;
-  margin: 0;
-
-  @media (min-width: @tablet-width) {
-    text-align: end;
-    font-size: 16px;
-    line-height: 20px;
-    max-width: 160px;
-  }
-}
-
 .map__picture {
   position: relative;
   width: 320px;
   height: 362px;
   margin: 0;
+  background-color: #f2f2f2;
   padding: 0;
 
   @media (min-width: @tablet-width) {

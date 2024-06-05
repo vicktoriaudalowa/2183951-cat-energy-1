@@ -1,5 +1,5 @@
 .hero {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-weight: 400;
   text-align: center;
   box-sizing: border-box;
@@ -58,6 +58,8 @@
   @media (min-width: @tablet-width) {
     color: #000000;
     width: 419px;
+    max-height: 240px;
+    overflow-y: hidden;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -77,6 +79,10 @@
     color: #000000;
     font-size: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    line-height: 20px;
+  }
 }
 
 .hero__link {
@@ -87,6 +93,7 @@
   @media (min-width: @tablet-width) {
     min-width: 244px;
     min-height: 54px;
+    overflow-y: hidden;
     margin-top: 0;
     font-size: 20px;
   }

@@ -26,11 +26,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0;
-    margin-left: 40px;
-    margin-right: 13px;
-    margin-bottom: 20px;
+    display: inline-flex;
+    white-space: pre-line;
+    overflow-x: visible;
     min-height: 40px;
+    word-wrap: break-word;
+    width: 200px;
+    margin: 0;
 
     &:last-child {
       margin-bottom: 0;
@@ -39,6 +41,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
+    max-width: 350px;
   }
 }
 
@@ -52,7 +55,12 @@
   border: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
+    top: 0;
     left: -43px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 5px;
   }
 }
 
