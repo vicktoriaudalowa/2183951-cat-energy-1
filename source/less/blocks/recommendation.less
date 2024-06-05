@@ -1,28 +1,200 @@
 .recommendation {
+  position: relative;
   padding: 25px 20px 40px 20px;
   background-color: #eaeaea;
   box-sizing: border-box;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    padding: 25px 30px 40px 30px;
+    max-width: @tablet-width;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    padding: 0 110px;
+    min-height: 598px;
+  }
 }
 
 .recommendation__title {
+  font-size: 36px;
+  margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    max-height: 90px;
+    margin-bottom: 60px;
+    overflow-y: hidden;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-height: 178px;
+    max-width: 800px;
+    margin-bottom: 146px;
+  }
 }
 
 .recommendation__description {
-  font-family: "Lato-Regular", sans-serif;
+  font-family: "Lato-Regular", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0;
   text-align: left;
+  color: #444444;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    line-height: 24px;
+    font-size: 16px;
+    max-width: 708px;
+    min-height: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 69px;
+    max-width: 800px;
+  }
+}
+
+.recommendation__wrapper {
+  background-color: #eaeaea;
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    max-width: @tablet-width;
+    margin-bottom: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    min-width: 600px;
+    margin: 0;
+    background-color: transparent;
+  }
+}
+
+.recommendation::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: 768px;
+    height: 462px;
+    right: 0;
+    bottom: -2px;
+    display: block;
+    background-color: #eaeaea;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    min-width: @desktop-width;
+    left: 0;
+    top: 145px;
+    height: 462px;
+    display: block;
+    background-color: #eaeaea;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 
 .recommendation__budget {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
   letter-spacing: 0;
   text-align: center;
+  margin: 0;
+  margin-left: 45px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    max-height: 80px;
+    margin-left: 110px;
+    margin-top: 30px;
+    font-size: 20px;
+    max-width: 174px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: static;
+    text-align: center;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 326px;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.recommendation__budget span {
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
+  }
+}
+
+.recommendation__progress {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    min-width: @tablet-width;
+    background-color: transparent;
+    height: 462px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    display: block;
+    right: -20px;
+    top: -10px;
+    max-width: @tablet-width;
+    background-color: transparent;
+    min-height: 598px;
+  }
+}
+
+.recommendation__data {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.recommendation__progress img {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+    left: 100px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 800px;
+    width: 560px;
+    height: 512px;
+  }
 }

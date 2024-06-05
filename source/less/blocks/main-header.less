@@ -1,8 +1,25 @@
 .main-header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  padding: 13px 20px;
+  flex-wrap: wrap;
   box-sizing: border-box;
+  justify-content: space-between;
+  padding: 13px 20px 0 20px;
+  max-width: 100%;
+
+  @media (min-width: @tablet-width) {
+    min-width: 704px;
+    min-height: 50px;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 25px 29px 0 29px;
+    border-bottom: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 55px 110px 0 110px;
+    border-bottom: transparent;
+  }
 }
 
 .main-header a {
@@ -10,6 +27,7 @@
 }
 
 .main-header__title {
+  margin-right: 80px;
   vertical-align: middle;
   align-items: center;
 
@@ -20,5 +38,9 @@
   &:active svg {
     fill: #6b6b6b;
   }
-}
 
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+    padding-left: 13px;
+  }
+}

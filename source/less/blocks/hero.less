@@ -1,45 +1,52 @@
 .hero {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   font-weight: 400;
   text-align: center;
-  background-color: #ffffff;
   box-sizing: border-box;
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    text-align: left;
+    padding: 65px 20px 0 120px;
+    margin-bottom: 526px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 110px 0 0 190px;
+    margin-bottom: 210px;
+    max-width: 1440px;
+  }
 }
 
 .hero__header {
-  position: relative;
   background-color: #68b738;
-  width: 320px;
+  max-width: 370px;
   min-height: 302px;
   padding: 27px 35px;
   box-sizing: border-box;
-  background-image: url("../img/hero-background.png");
-  background-repeat: no-repeat;
-  background-position: 100% auto;
   opacity: 85%;
-  flex-grow: 1;
-}
 
-.hero__header::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #68b738;
-  opacity: 85%;
-  height: 100%;
-  width: 320px;
-  z-index: -1;
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 50px;
+    min-height: 180px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .hero__title {
+  position: relative;
   display: block;
   font-weight: 400;
-  max-width: 250px;
+  width: 250px;
   margin: 0;
   margin-bottom: 25px;
   font-size: 36px;
@@ -47,6 +54,17 @@
   color: #ffffff;
   box-sizing: border-box;
   letter-spacing: 0;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    width: 419px;
+    max-height: 240px;
+    overflow-y: hidden;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__slogan {
@@ -56,19 +74,105 @@
   letter-spacing: 0;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 20px;
+  }
 }
 
 .hero__link {
-  padding: 10px 44px 10px 44px;
+  font-size: 16px;
   margin-top: 138px;
+  min-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 244px;
+    min-height: 54px;
+    overflow-y: hidden;
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 244px;
+    min-height: 54px;
+    margin-right: auto;
+    margin-top: 0;
+    font-size: 20px;
+  }
 }
 
 .hero__container {
   position: relative;
+  box-sizing: border-box;
+  background-image: url("../img/hero/hero-cat-mobile.webp");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+  }
 }
 
 .hero__image {
   position: absolute;
   left: 30px;
   bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 709px;
+    height: 609px;
+    left: -70px;
+    top: 201px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 552px;
+    height: 499px;
+    top: -65px;
+    left: 355px;
+    z-index: 0;
+  }
+}
+
+.hero__background {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -230px;
+    left: 530px;
+    width: 720px;
+    height: 694px;
+    background-color: #68b738;
+    display: block;
+    background-image: url("../img/hero/hero-cat-desktop.webp");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom right;
+    z-index: -1;
+  }
+}
+
+.hero__background::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    opacity: 80%;
+    width: 720px;
+    height: 694px;
+    background-color: #68b738;
+  }
 }
