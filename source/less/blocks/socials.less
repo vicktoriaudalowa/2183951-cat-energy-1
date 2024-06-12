@@ -1,14 +1,42 @@
 .socials {
+  position: relative;
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 20px 10px;
   min-width: 132px;
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
     border: none;
+    margin-left: 37px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+
+    @media (min-width: @tablet-width) {
+      content: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: #e6e6e6;
+
+    @media (min-width: @tablet-width) {
+      content: none;
+    }
   }
 }
 

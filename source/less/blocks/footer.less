@@ -1,6 +1,6 @@
 .footer {
   background-color: #f2f2f2;
-  padding: 40px 20px;
+  padding: 40px 20px 38px 20px;
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
@@ -37,10 +37,19 @@
 }
 
 .footer__container {
+  max-width: 320px;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 768px;
+    margin-top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
   }
 }
 
@@ -69,7 +78,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 13px;
 
   &:hover {
     color: #68b738;

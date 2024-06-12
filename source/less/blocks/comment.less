@@ -1,0 +1,32 @@
+.comment__wrapper h2 {
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 87px;
+  }
+}
+
+.comment__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 628px;
+    padding: 55px 70px 75px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 1220px;
+    padding: 70px 110px 100px 110px;
+    margin-bottom: 0;
+  }
+}
+
+.comment__wrapper p {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 29px;
+  }
+}

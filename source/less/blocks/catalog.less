@@ -1,29 +1,17 @@
 .catalog__section {
   position: relative;
-  padding: 27px 0 25px 0;
+  padding: 27px 0 0 0;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    max-width: none;
-    padding: 65px 30px 90px 30px;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 68px 30px 55px 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 74px 110px 96px 110px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 320px;
-    height: 1px;
-    bottom: 0;
-    background-color: #ebebeb;
-
-    @media (min-width: @tablet-width) {
-      content: none;
-    }
+    max-width: 1440px;
+    padding: 65px 110px 60px 110px;
   }
 }
 
@@ -38,21 +26,23 @@
   @media (min-width: @tablet-width) {
     max-width: 450px;
     margin: 0;
+    padding: 0;
     font-size: 60px;
-    margin-bottom: 84px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 60px;
-    margin-bottom: 84px;
+    margin-bottom: 74px;
+    padding-left: 0;
+    margin-top: -10px;
   }
 }
 
 .catalog__card {
   padding: 0;
   display: block;
-  max-width: 320px;
-  margin: 0 auto;
+  width: 100%;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
@@ -60,19 +50,18 @@
     display: grid;
     grid-template-columns: 324px 324px;
     grid-column-gap: 60px;
-    grid-row-gap: 80px;
+    grid-row-gap: 62px;
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
     grid-template-columns: repeat(4, 245px);
     grid-column-gap: 80px;
-    grid-row-gap: 63px;
+    grid-row-gap: 47px;
   }
 }
 
 .catalog__extra {
-  padding: 25px 20px 19px 20px;
+  padding: 10px 20px 5px 20px;
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 320px;
@@ -83,7 +72,56 @@
 
   @media (min-width: @desktop-width) {
     max-width: 1086px;
-    padding-left: 110px;
+    padding-left: 90px;
+    padding-right: 0;
     margin: 0;
   }
 }
+
+.catalog__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    height: 1px;
+    top: 27px;
+    right: 0;
+    width: 50%;
+    background-color: #68b738;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100vw;
+    }
+  }
+
+  &::after {
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      display: block;
+      height: 1px;
+      top: 27px;
+      width: 93vw;
+      background-color: #68b738;
+    }
+  }
+}
+

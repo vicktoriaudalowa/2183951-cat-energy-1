@@ -16,6 +16,7 @@
     "gulp-postcss": "9.0.1",
     "gulp-svgo": "^2.2.1",
     "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
     "postcss": "8.3.11",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
