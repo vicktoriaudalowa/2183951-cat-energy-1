@@ -1,21 +1,20 @@
 .progress {
   position: relative;
-  max-width: 270px;
+  max-width: 290px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    min-width: @tablet-width;
+    max-width: @tablet-width;
+    justify-content: center;
     background-color: transparent;
     margin-top: -50px;
-    margin-bottom: 80px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0;
     min-width: 500px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    margin-right: 180px;
     background-color: transparent;
   }
 }
@@ -33,6 +32,7 @@
 
   @media (min-width: @desktop-width) {
     height: 512px;
+    margin-bottom: 58px;
   }
 }
 
@@ -40,11 +40,11 @@
   clip-path: inset(0 140px 0 0);
 
   @media (min-width: @tablet-width) {
-    clip-path: inset(0 285px 0 0);
+    clip-path: inset(0 280px 0 0);
   }
 
   @media (min-width: @desktop-width) {
-    clip-path: inset(0 270px 0 0);
+    clip-path: inset(0 278px 0 0);
   }
 }
 
@@ -52,18 +52,18 @@
   clip-path: inset(0 0 0 140px);
   position: absolute;
   left: 0;
-  top: -5px;
+  top: 0;
 
   @media (min-width: @tablet-width) {
-    left: 110px;
+    left: 75px;
     top: 0;
-    clip-path: inset(0 0 0 270px);
+    clip-path: inset(0 0 0 276px);
   }
 
   @media (min-width: @desktop-width) {
-    left: 0;
-    top: -10px;
-    clip-path: inset(0 0 0 290px);
+    left: 3px;
+    top: -5px;
+    clip-path: inset(0 0 0 282px);
   }
 }
 
@@ -71,7 +71,7 @@
   position: absolute;
   height: 256px;
   width: 4px;
-  right: 130px;
+  right: 140px;
   top: 0;
   background-color: #666666;
   border-radius: 2px;
@@ -81,13 +81,13 @@
 
   @media (min-width: @tablet-width) {
     top: 0;
-    right: 385px;
+    right: 353px;
     height: 512px;
     width: 4px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 210px;
+    right: 277px;
   }
 
   &:hover {

@@ -9,14 +9,15 @@
     padding: 29px 0;
     max-width: 710px;
     margin-top: 40px;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: @desktop-width) {
     max-height: 288px;
     min-width: 245px;
     margin-top: 70px;
-    margin-left: 50px;
+    margin-left: 53px;
+    margin-bottom: 47px;
   }
 }
 
@@ -89,24 +90,27 @@
 }
 
 .present__description {
+  display: flex;
   font-family: "Lato-Regular", "Tahoma", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   color: #ffffff;
   z-index: 1;
+  vertical-align: middle;
+  width: 185px;
   max-height: 200px;
   overflow-y: hidden;
 
   @media (min-width: @tablet-width) {
+    overflow-y: hidden;
     display: inline-flex;
     text-align: left;
-    overflow: visible;
     max-width: 161px;
-    margin-left: 365px;
+    margin-left: 362px;
   }
 
   @media (min-width: @desktop-width) {

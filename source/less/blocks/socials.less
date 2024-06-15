@@ -1,6 +1,7 @@
 .socials {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0;
   padding: 20px 10px;
@@ -9,6 +10,7 @@
   @media (min-width: @tablet-width) {
     border: none;
     margin-left: 37px;
+    max-width: 200px;
   }
 
   &::after {
@@ -42,15 +44,10 @@
 
 .socials__item {
   list-style-type: none;
-  margin-right: 24px;
-}
-
-.socials__item:last-child {
-  margin-right: 0;
 }
 
 .socials__link {
-  width: 28px;
+  width: 55px;
   height: 22px;
   display: inline-flex;
   align-items: center;

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="description" content="Healthy food for cats - Cat Energy.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
@@ -28,7 +28,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <!-- Закрыть меню - добавить класс main-nav__list--close -->
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--index">
           <li class="main-nav__item main-nav__item--line main-nav__item--close"><a href="index.html">Главная</a></li>
           <li class="main-nav__item main-nav__item--close"><a href="catalog.html">Каталог продукции</a></li>
           <li class="main-nav__item main-nav__item--close"><a href="form.html">Подбор программы</a></li>
@@ -44,6 +44,9 @@
               <h1 class="hero__title">Функциональное питание для котов</h1>
               <p class="hero__slogan">Занялся собой? Займись котом!</p>
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/hero-product-desktop@1x.webp 1x, img/hero/hero-product-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/hero-product-tablet@1x.webp 1x, img/hero/hero-product-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/hero/hero-product@1x.webp 1x, img/hero/hero-product@2x.webp 2x">
                 <source media="(min-width: 1440px)"
                   srcset="img/hero/hero-product-desktop@1x.png 1x, img/hero/hero-product-desktop@2x.png 2x">
                 <source media="(min-width: 768px)"
@@ -115,6 +118,7 @@
       <!-- Рекомендации -->
       <section class="recommendation">
         <div class="recommendation__wrapper">
+        <div class="recommendation__content">
           <h2 class="recommendation__title title">Живой пример</h2>
           <p class="recommendation__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
             Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
@@ -122,16 +126,23 @@
           <article class="recommendation__data data">
             <h3 class="data__name">5 кг<span class="data__description">снижение веса</span></h3>
             <p class="data__name">60 дней<span class="data__description">затрачено времени</span></p>
-            <p class="recommendation__budget">Затраты на питание: <span>15 000руб.</span> </p>
+            <p class="recommendation__budget">Затраты на питание: <span>15 000 руб.</span> </p>
           </article>
         </div>
         <div class="recommendation__progress progress">
-          <img class="progress__img progress__img--fat" src="img/preview-cat-fat@1x.png"
+          <picture>
+            <source type="image/webp" srcset="img/preview-cat-fat@1x.webp 1x, img/preview-cat-fat@2x.webp 2x">
+            <img class="progress__img progress__img--fat" src="img/preview-cat-fat@1x.png"
             srcset="img/preview-cat-fat@2x.png 2x" loading="lazy" alt="Толстый кот." width="280" height="256">
-          <img class="progress__img progress__img--slim" src="img/preview-cat-slim@1x.png"
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/preview-cat-slim@1x.webp 1x, img/preview-cat-slim@2x.webp 2x">
+            <img class="progress__img progress__img--slim" src="img/preview-cat-slim@1x.png"
             srcset="img/preview-cat-slim@2x.png 2x" loading="lazy" alt="Похудевший кот." width="280" height="256">
+          </picture>
           <button class="progress__button"></button>
         </div>
+      </div>
       </section>
 
       <!-- Приглашение к сотрудничеству + карта -->

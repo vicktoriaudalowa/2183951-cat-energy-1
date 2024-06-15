@@ -48,10 +48,15 @@
   display: flex;
   color: #000000;
   text-decoration: none;
-  height: 40px;
+  max-height: 55px;
+  max-width: 280px;
   box-sizing: border-box;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
+    overflow: visible;
+    max-height: none;
+    max-width: none;
     height: 100%;
     padding: 6px 0;
     text-decoration: none;
@@ -105,28 +110,32 @@
     position: static;
     display: flex;
     flex-wrap: wrap;
-    min-width: 436px;
+    min-width: 420px;
     align-items: center;
     font-size: 18px;
-    justify-content: space-around;
+    justify-content: start;
     vertical-align: middle;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
-    max-height: 110px;
-    width: 470px;
+    min-height: 110px;
+    width: 485px;
+  }
+}
 
+.main-nav__list--index {
+  @media (min-width: @desktop-width) {
     &::before {
-      display: block;
-      content: "";
       position: absolute;
-      top: -150px;
-      left: -140px;
-      height: 100%;
-      width: 50vw;
       z-index: -1;
-      background-color: #68b738;
+      content: "";
+      display: block;
+      width: 50vw;
+      left: -125px;
+      top: -55px;
+      height: 100%;
+      background-color: #599e2e;
     }
   }
 }
@@ -161,6 +170,10 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
   }
 
   &--line {
