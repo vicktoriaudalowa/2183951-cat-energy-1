@@ -12,17 +12,6 @@
   @media (min-width: @desktop-width) {
     max-width: 1440px;
     padding: 40px 110px 55px 110px;
-
-    &::after {
-      content: "";
-      display: block;
-      height: 1px;
-      position: absolute;
-      width: 92.3vw;
-      bottom: -26px;
-      z-index: -1;
-      background-color: #68b738;
-    }
   }
 }
 
@@ -61,7 +50,7 @@
     display: grid;
     grid-template-columns: 324px 324px;
     grid-column-gap: 60px;
-    grid-row-gap: 54px;
+    grid-row-gap: 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -97,7 +86,7 @@
   @media (min-width: @desktop-width) {
     max-width: 1440px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     flex-direction: row;
     align-items: center;
   }
@@ -119,6 +108,25 @@
 
     @media (min-width: @desktop-width) {
       content: none;
+    }
+  }
+}
+
+.catalog__center {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 28px;
+      z-index: -1;
+      background-color: #68b738;
     }
   }
 }
