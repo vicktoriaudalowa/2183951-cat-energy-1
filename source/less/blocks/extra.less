@@ -74,7 +74,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
-    width: 326px;
+    width: 323px;
   }
 }
 
@@ -98,16 +98,23 @@
   @media (min-width: @desktop-width) {
     font-size: 16px;
     line-height: 20px;
-    width: 276px;
+    width: 280px;
     display: inline-flex;
     justify-content: space-between;
     margin-right: 50px;
-    margin-left: 3px;
   }
 }
 
 .extra__wrapper p span {
   margin-left: 50px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 42px;
+    margin-right: -4px;
+  }
 }
 
 .extra__item {
@@ -119,6 +126,10 @@
     margin-bottom: 0;
     padding-bottom: 20px;
     border-bottom: 1px solid #cdcdcd;
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 16px;
+    }
   }
 
   @media (min-width: @tablet-width) {
